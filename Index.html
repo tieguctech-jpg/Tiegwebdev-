@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TIEGWEBDEV | Software, Web & App Developer</title>
+
+  <meta name="description" content="TIEGWEBDEV builds websites, mobile apps, ecommerce stores, backend APIs and AI-powered software. Contact TIEGWEBDEV for development projects.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TIEGWEBDEV">
+  <meta name="theme-color" content="#F8F5F0">
+
+  <link rel="canonical" href="https://tieguctech-jpg.github.io/Tiegwebdev/">
+
+  <meta property="og:title" content="TIEGWEBDEV | Software Developer">
+  <meta property="og:description" content="Websites, mobile apps, backend systems, ecommerce and AI-powered software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tieguctech-jpg.github.io/Tiegwebdev/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "TIEGWEBDEV",
+    "url": "https://tieguctech-jpg.github.io/Tiegwebdev/",
+    "jobTitle": "Software Developer",
+    "email": "mailto:michealtieg84@gmail.com",
+    "knowsAbout": [
+      "Web Development",
+      "Mobile App Development",
+      "Software Development",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "React",
+      "Node.js",
+      "Python",
+      "Artificial Intelligence",
+      "API Development",
+      "Ecommerce Development"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: #F8F5F0;
+      --white: #FFFFFF;
+      --gold: #C9A227;
+      --gold-light: #E5C76B;
+      --black: #1F1F1F;
+      --gray: #686868;
+      --border: #E8E2D8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--black);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 245, 240, 0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: #997511;
+    }
+
+    .menu-button {
+      display: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      padding: 7px 12px;
+      cursor: pointer;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 21px;
+      border-radius: 7px;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: #171717;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      background: transparent;
+      border-color: var(--black);
+      color: var(--black);
+    }
+
+    .button-outline:hover {
+      background: var(--black);
+      color: white;
+    }
+
+    .hero {
+      padding: 100px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #997511;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    h1 {
+      font-size: clamp(39px, 5.5vw, 68px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #AD8518;
+    }
+
+    .hero-description {
+      max-width: 600px;
+      color: var(--gray);
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(50, 40, 15, 0.07);
+    }
+
+    .monogram {
+      width: 85px;
+      height: 85px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    .hero-card h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .hero-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .availability {
+      display: inline-block;
+      margin-top: 20px;
+      background: #F5F2E8;
+      border-radius: 30px;
+      padding: 7px 13px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-white {
+      background: white;
+    }
+
+    .section-heading {
+      max-width: 680px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .section-heading p {
+      color: var(--gray);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card,
+    .project-card,
+    .skill-card,
+    .price-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 24px;
+    }
+
+    .service-card,
+    .project-card {
+      transition: 0.2s;
+    }
+
+    .service-card:hover,
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .service-number {
+      color: #AD8518;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .service-card h3,
+    .project-card h3,
+    .skill-card h3 {
+      font-size: 19px;
+      margin: 12px 0 8px;
+    }
+
+    .service-card p,
+    .project-card p,
+    .skill-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 17px;
+    }
+
+    .tag {
+      background: #F5F1E6;
+      border-radius: 5px;
+      padding: 5px 9px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .project-category {
+      color: #997511;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Gold email buttons for every project card */
+    .project-link {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+      padding: 12px 20px;
+      background: var(--gold);
+      color: var(--black);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .project-link:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .skill-card {
+      background: var(--cream);
+    }
+
+    .skill-card ul,
+    .price-card ul {
+      margin: 13px 0 0 18px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .about-grid h2 {
+      font-size: 37px;
+      line-height: 1.2;
+      margin: 12px 0 18px;
+    }
+
+    .about-grid p {
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .about-panel {
+      padding: 28px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .about-panel div {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-panel div:last-child {
+      border-bottom: 0;
+    }
+
+    .about-panel strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .about-panel span {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .price-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .price-card .price {
+      font-size: 28px;
+      font-weight: 900;
+      margin: 12px 0;
+    }
+
+    .price-card p {
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    .price-card ul {
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .price-card .button {
+      width: 100%;
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    .price-note {
+      margin-top: 20px;
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 40px;
+    }
+
+    .contact-copy h2 {
+      font-size: 39px;
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .contact-copy p {
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    .contact-email {
+      font-weight: 800;
+      color: #997511;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-form {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .contact-form .button {
+      width: 100%;
+    }
+
+    footer {
+      background: var(--black);
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #D0CDC7;
+      font-size: 13px;
+    }
+
+    footer .brand {
+      color: white;
+    }
+
+    .back-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold);
+      font-size: 20px;
+      font-weight: 900;
+      z-index: 50;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3,
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .navbar {
+        min-height: 67px;
+      }
+
+      .brand {
+        font-size: 19px;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        right: 0;
+        padding: 20px 5%;
+        background: var(--cream);
+        border-bottom: 1px solid var(--border);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .grid-3,
+      .projects-grid,
+      .skills-grid,
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 25px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home">TIEG<span>WEBDEV</span></a>
+
+      <button class="menu-button" id="menuButton"
+        aria-label="Toggle navigation" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Software • Web • Mobile • AI</div>
+          <h1>Turning your ideas into <span>digital products.</span></h1>
+
+          <p class="hero-description">
+            TIEGWEBDEV develops modern websites, mobile applications,
+            backend systems, ecommerce stores and AI-powered software
+            for individuals, startups and businesses.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button" href="#contact">Start a Project ↗</a>
+            <a class="button button-outline" href="#projects">Explore Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="monogram">T</div>
+          <h2>Build. Connect.</h2>
+          <p>
+            From the user interface to the backend, databases and APIs,
+            I work to turn digital product ideas into working software.
+          </p>
+          <div class="availability">Available for project enquiries</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What I Do</div>
+          <h2>Development services for your next idea.</h2>
+          <p>Digital solutions built around your business goals.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="service-card">
+            <div class="service-number">01 / WEB</div>
+            <h3>Website Development</h3>
+            <p>Business websites, portfolios, landing pages, blogs and web applications.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02 / MOBILE</div>
+            <h3>Mobile App Development</h3>
+            <p>Mobile interfaces, account systems, messaging features and Android applications.</p>
+            <div class="tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Capacitor</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03 / BACKEND</div>
+            <h3>Backend & APIs</h3>
+            <p>Server-side functionality, authentication, databases, REST APIs and real-time systems.</p>
+            <div class="tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">SQL</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04 / COMMERCE</div>
+            <h3>Ecommerce Stores</h3>
+            <p>Online stores with product pages, shopping carts, payment integrations and admin dashboards.</p>
+            <div class="tags">
+              <span class="tag">Online Stores</span>
+              <span class="tag">Payments</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">05 / AI</div>
+            <h3>AI-Powered Software</h3>
+            <p>Applications that integrate AI APIs, image generation and automated creative workflows.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI APIs</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">06 / SUPPORT</div>
+            <h3>Bug Fixes & Integration</h3>
+            <p>Debugging, API connections, responsive improvements and existing app maintenance.</p>
+            <div class="tags">
+              <span class="tag">Debugging</span>
+              <span class="tag">Integration</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Selected Work</div>
+          <h2>Projects and products.</h2>
+          <p>Interested in a project? Send an email to discuss it.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-category">AI / Creative Software</div>
+            <h3>TIEG AI Creative Studio</h3>
+            <p>An AI creative product focused on image creation, editing and a creator workspace.</p>
+            <div class="tags">
+              <span class="tag">AI</span>
+              <span class="tag">Image Generation</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=TIEG%20AI%20Creative%20Studio%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Communication / Web</div>
+            <h3>PrimeConnect</h3>
+            <p>A communication-oriented web project demonstrating interface development.</p>
+            <div class="tags">
+              <span class="tag">Web</span>
+              <span class="tag">UI</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=PrimeConnect%20Project%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Web Platform</div>
+            <h3>SyntaxFlow</h3>
+            <p>A web product exploring digital tools and web application development.</p>
+            <div class="tags">
+              <span class="tag">Frontend</span>
+              <span class="tag">Web App</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=SyntaxFlow%20Project%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">SMS / Verification</div>
+            <h3>SMS Market</h3>
+            <p>A phone verification service application involving accounts, service selection and APIs.</p>
+            <div class="tags">
+              <span class="tag">API</span>
+              <span class="tag">Backend</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=SMS%20Market%20Project%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Reading / Publishing</div>
+            <h3>The Silent Hour</h3>
+            <p>A novel-reading web project with a content-focused reading experience.</p>
+            <div class="tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Content</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=The%20Silent%20Hour%20Project%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Portfolio / Web Design</div>
+            <h3>TIEGWEBDEV</h3>
+            <p>This portfolio presents development services, skills, projects and contact information.</p>
+            <div class="tags">
+              <span class="tag">Responsive Design</span>
+              <span class="tag">Portfolio</span>
+            </div>
+            <a class="project-link" href="mailto:michealtieg84@gmail.com?subject=TIEGWEBDEV%20Portfolio%20Inquiry">
+              Send Me an Email
+            </a>
+          </article>
+
+        </div>
+
+        <p class="price-note">
+          Project descriptions are summaries. Availability and features may vary.
+          Contact TIEGWEBDEV for project enquiries.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-white" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Technical Skills</div>
+          <h2>Technology behind the products.</h2>
+          <p>Tools and technologies used across web, mobile and software projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend Development</h3>
+            <p>Building responsive interfaces and interactive experiences.</p>
+            <ul>
+              <li>HTML and CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Responsive design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Backend Development</h3>
+            <p>Building server-side functionality and application APIs.</p>
+            <ul>
+              <li>PHP</li>
+              <li>Node.js</li>
+              <li>REST APIs</li>
+              <li>WebSockets</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Databases</h3>
+            <p>Working with application data and persistence.</p>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+              <li>Firebase</li>
+              <li>Realtime databases</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Mobile Development</h3>
+            <p>Building mobile application experiences and packages.</p>
+            <ul>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Capacitor</li>
+              <li>Android builds</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Authentication & Security</h3>
+            <p>Integrating sign-in and protecting application resources.</p>
+            <ul>
+              <li>Firebase Auth</li>
+              <li>Google Sign-In</li>
+              <li>JWT and sessions</li>
+              <li>API security</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Python & AI</h3>
+            <p>Developing software that connects with AI services.</p>
+            <ul>
+              <li>Python</li>
+              <li>AI APIs</li>
+              <li>Image workflows</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">About TIEGWEBDEV</div>
+          <h2>Software development with a focus on useful products.</h2>
+          <p>
+            I am a software developer focused on creating websites,
+            mobile apps and connected software experiences.
+          </p>
+          <p>
+            My work can include frontend interfaces, backend APIs,
+            databases, authentication, payment integrations and AI services.
+            I use suitable tools for each project's needs.
+          </p>
+          <p>
+            My goal is to help clients turn ideas into digital products
+            that are useful, accessible and ready for further development.
+          </p>
+          <a class="button" href="#contact">Discuss Your Project</a>
+        </div>
+
+        <div class="about-panel">
+          <div>
+            <strong>Website Development</strong>
+            <span>Business websites, portfolios and web applications</span>
+          </div>
+          <div>
+            <strong>Mobile Applications</strong>
+            <span>Mobile-first products and Android app development</span>
+          </div>
+          <div>
+            <strong>Backend Systems</strong>
+            <span>APIs, databases, authentication and integrations</span>
+          </div>
+          <div>
+            <strong>AI Integration</strong>
+            <span>AI-powered features and creative applications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white" id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Starting Prices</div>
+          <h2>Choose a development option.</h2>
+          <p>These are indicative starting prices. Final cost depends on scope and functionality.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <div class="project-category">Ready Website</div>
+            <div class="price">$20</div>
+            <p>For a suitable existing website option.</p>
+            <ul>
+              <li>Existing design</li>
+              <li>Basic setup</li>
+              <li>Scope confirmed first</li>
+            </ul>
+            <a class="button" href="mailto:michealtieg84@gmail.com?subject=Ready%20Website%20Enquiry">Enquire</a>
+          </article>
+
+          <article class="price-card">
+            <div class="project-category">Custom Website</div>
+            <div class="price">$200</div>
+            <p>For a custom website project.</p>
+            <ul>
+              <li>Custom interface</li>
+              <li>Responsive layout</li>
+              <li>Requirements agreed</li>
+            </ul>
+            <a class="button" href="mailto:michealtieg84@gmail.com?subject=Custom%20Website%20Enquiry">Enquire</a>
+          </article>
+
+          <article class="price-card">
+            <div class="project-category">Ready App</div>
+            <div class="price">$100</div>
+            <p>For a suitable existing app option.</p>
+            <ul>
+              <li>Existing app option</li>
+              <li>Compatibility review</li>
+              <li>Scope confirmed first</li>
+            </ul>
+            <a class="button" href="mailto:michealtieg84@gmail.com?subject=Ready%20App%20Enquiry">Enquire</a>
+          </article>
+
+          <article class="price-card">
+            <div class="project-category">Custom App</div>
+            <div class="price">$1,000</div>
+            <p>For a custom mobile app project.</p>
+            <ul>
+              <li>Custom requirements</li>
+              <li>Backend scope agreed</li>
+              <li>Delivery plan agreed</li>
+            </ul>
+            <a class="button" href="mailto:michealtieg84@gmail.com?subject=Custom%20App%20Enquiry">Enquire</a>
+          </article>
+        </div>
+
+        <p class="price-note">
+          Prices are starting estimates, not guaranteed quotes. Hosting,
+          third-party services, payment processing and maintenance may cost extra.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Let's build something useful.</h2>
+          <p>
+            Have a website, mobile app, ecommerce store or software idea?
+            Send the project details and we can discuss the requirements.
+          </p>
+          <p>Email:</p>
+          <a class="contact-email" href="mailto:michealtieg84@gmail.com">
+            michealtieg84@gmail.com
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Website Development</option>
+              <option>Mobile App Development</option>
+              <option>Backend & API Development</option>
+              <option>Ecommerce Store</option>
+              <option>AI-Powered Software</option>
+              <option>Bug Fixes & Integration</option>
+              <option>Other Project</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" required placeholder="Describe what you want to build..."></textarea>
+          </div>
+
+          <button class="button" type="submit">Prepare Email ↗</button>
+
+          <p class="price-note">
+            This form opens your email application with the message prepared.
+            It does not send anything automatically.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <a class="brand" href="#home">TIEG<span>WEBDEV</span></a>
+      <p>Software Developer • Websites • Mobile Apps • AI</p>
+      <a href="mailto:michealtieg84@gmail.com">Contact TIEGWEBDEV</a>
+      <p>© <span id="year"></span> TIEGWEBDEV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navigation = document.getElementById("navigation");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navigation.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navigation.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      const subject = encodeURIComponent("Project enquiry: " + service);
+
+      const body = encodeURIComponent(
+        "Hello TIEGWEBDEV,\n\n" +
+        "My name: " + name + "\n" +
+        "My email: " + email + "\n" +
+        "Service: " + service + "\n\n" +
+        "Project details:\n" + message
+      );
+
+      window.location.href =
+        "mailto:michealtieg84@gmail.com?subject=" +
+        subject + "&body=" + body;
+    });
+  </script>
+</body>
+  </html>
